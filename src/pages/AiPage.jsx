@@ -34,6 +34,7 @@ const ChatApp = () => {
                 clearInterval(interval);
             }
         }, 20);
+        
     };
 
     const generateUniqueId = () => {
@@ -100,7 +101,9 @@ const ChatApp = () => {
                 setMessages((prevMessages) =>
                     prevMessages.map((msg) =>
                         msg.uniqueId === botUniqueId
-                            ? { ...msg, value: parsedData } // Update bot response value
+                            ? { ...msg
+                                // , value: parsedData 
+                            } // Update bot response value
                             : msg
                     )
                 );
