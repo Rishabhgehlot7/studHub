@@ -8,6 +8,7 @@ import LoginPage from './pages/LoginPage';
 import Register from './pages/Register';
 import LoginContext, { LoginDetails } from './context/LoginContext';
 import Home from './pages/Home';
+import AiPage from './pages/AiPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -23,6 +24,10 @@ let router = createBrowserRouter([
   {
     path: "Register",
     element: <Register />
+  },
+  {
+    path: "/ai",
+    element: <AiPage />
   },
 ])
 
