@@ -142,7 +142,7 @@ const ChatApp = () => {
                     name="prompt"
                     rows="1"
                     cols="1"
-                    placeholder="Ask codex..."
+                    placeholder="Ask studhub..."
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                 />
