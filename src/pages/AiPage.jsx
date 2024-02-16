@@ -78,7 +78,9 @@ const ChatApp = () => {
 
         const chatContainer = document.getElementById('chat_container');
         chatContainer.scrollTop = chatContainer.scrollHeight;
-        
+
+
+
 
         try {
             const response = await fetch('http://localhost:5000', {
