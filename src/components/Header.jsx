@@ -45,7 +45,7 @@ export default function Header() {
                         <Link to={'/Login'} className=' text-white px-2'>Login</Link>
                     </>
                     :
-                    <Link onClick={addQuizData} className=' text-white px-2'>Login</Link>
+                    <Link onClick={addQuizData} className=' text-white px-2'>Logout</Link>
 
                 }
                 <Navbar.Toggle />
