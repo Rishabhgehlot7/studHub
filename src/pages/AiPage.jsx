@@ -120,7 +120,7 @@ export default function AiPage() {
         <div id="app">
             <div id="chat_container"></div>
 
-            <form onSubmit={handleSubmit} onKeyUp={(e) => {
+            <form className='aiForm' onSubmit={handleSubmit} onKeyUp={(e) => {
                 if (e.keyCode === 13) {
                     handleSubmit(e)
                 }

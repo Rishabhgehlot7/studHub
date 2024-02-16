@@ -102,7 +102,7 @@ export default function Login() {
 
                         <div className="bg-white rounded-lg overflow-hidden shadow-2xl">
                             <div className="p-8">
-                                <form onSubmit={loginAuth}>
+                                <form onSubmit={loginAuth} className='flex flex-col bg-white'>
                                     <div className="mb-5">
                                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-600">Email</label>
 
