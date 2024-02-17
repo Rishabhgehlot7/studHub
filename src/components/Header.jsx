@@ -35,7 +35,7 @@ export default function Header() {
         <Navbar fluid rounded className=' bg-black'>
             <Navbar.Collapse href="https://flowbite-react.com">
                 {/* <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" /> */}
-                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white text-white">Studhub</span>
+                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white text-white">StudBud</span>
             </Navbar.Collapse>
             <div className="flex md:order-2">
 
@@ -54,7 +54,7 @@ export default function Header() {
                 <Link href="#" to={'/'} className=' text-white'>
                     Home
                 </Link>
-                <Link href="#" to={'/'} className=' text-white'>Courses</Link>
+                <Link href="#" to={'/Coureses'} className=' text-white'>Courses</Link>
                 <Link href="#" to={'/'} className=' text-white'>Test</Link>
                 <Link href="#" to={'/'} className=' text-white'>Collab</Link>
                 <Link href="#" to={'/'} className=' text-white'>Notes</Link>
