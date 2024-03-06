@@ -3,7 +3,7 @@
 import { Button, Navbar } from 'flowbite-react';
 
 import React, { useContext, useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { getAuth, signOut } from "firebase/auth";
 import { app } from '../firebaseConfig';
 import { useNavigate } from "react-router-dom";
@@ -51,14 +51,12 @@ export default function Header() {
                 <Navbar.Toggle />
             </div>
             <Navbar.Collapse>
-                <Link href="#" to={'/'} className=' text-white'>
-                    Home
-                </Link>
-                <Link href="#" to={'/Coureses'} className=' text-white'>Courses</Link>
-                <Link href="#" to={'/'} className=' text-white'>Test</Link>
-                <Link href="#" to={'/'} className=' text-white'>Collab</Link>
-                <Link href="#" to={'/'} className=' text-white'>Notes</Link>
-                <Link href="#" to={'/'} className=' text-white'>Friends</Link>
+                <NavLink to={'/'} className={(isActive) => `${isActive ? 'text-white' : 'text-white'}`}>Home</NavLink>
+                <NavLink to={'/Coureses'} className={(isActive) => `${isActive ? 'text-white' : 'text-white'}`}>Courses</NavLink>
+                <NavLink to={'/Test'} className={(isActive) => `${isActive ? 'text-white' : 'text-white'}`}>Test</NavLink>
+                <NavLink to={'/Collab'} className={(isActive) => `${isActive ? 'text-white' : 'text-white'}`}>Collab</NavLink>
+                <NavLink to={'/Notes'} className={(isActive) => `${isActive ? 'text-white' : 'text-white'}`}>Notes</NavLink>
+                <NavLink to={'/users'} className={(isActive) => `${isActive ? 'text-white' : 'text-white'}`}>Friends</NavLink>
             </Navbar.Collapse>
         </Navbar>
     );

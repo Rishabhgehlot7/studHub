@@ -10,6 +10,12 @@ import LoginContext, { LoginDetails } from './context/LoginContext';
 import Home from './pages/Home';
 import AiPage from './pages/AiPage';
 import Coureses from './pages/Coureses';
+import TestPage from './pages/TestPage';
+import TestPage01 from './pages/testFull/TestPage01';
+import TestPage001 from './pages/testFull/TestPage001';
+import Collab from './pages/Collab';
+import NoteApp from './pages/Notes';
+import Users from './pages/Users';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -33,6 +39,30 @@ let router = createBrowserRouter([
   {
     path: "/Coureses",
     element: <Coureses />
+  },
+  {
+    path: "/test",
+    element: <TestPage />
+  },
+  {
+    path: "/test/:title",
+    element: <TestPage01 />
+  },
+  {
+    path: "/test/TestPage",
+    element: <TestPage001 />
+  },
+  {
+    path: "/Collab",
+    element: <Collab />
+  },
+  {
+    path: "/Notes",
+    element: <NoteApp />
+  },
+  {
+    path: "/users",
+    element: <Users />
   },
 ])
 

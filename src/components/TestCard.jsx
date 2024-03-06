@@ -1,20 +1,19 @@
-// import Image from 'next/image';
-
 import { Link } from "react-router-dom";
 
 function TestCard(props) {
     return (
-        <Link className=" w-[250] bg-white shadow-xl text-black rounded-lg m-5" to={props.link} >
+        <Link className=" w-[250] bg-white shadow-xl text-black rounded-lg m-5" to={`/test/${props.title}`} >
             <div className=" w-full h-auto">
-                <iframe className=" rounded-lg w-full h-[220px]" src={props.link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <img src={props.img_add} alt="" className=" rounded-lg w-full h-[220px]" />
             </div>
             <div className=" p-3 w-full">
-                <h className="font-medium text-xl">
-                    {props.title}
-                </h>
+                <Link className="font-medium text-xl " to={`/test/${props.title}`} >
+                    {`${props.title} Test`}
+                </Link>
             </div>
 
         </Link>
     );
 }
 export default TestCard;
+

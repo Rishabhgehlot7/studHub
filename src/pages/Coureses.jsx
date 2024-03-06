@@ -19,17 +19,3 @@ export default function Coureses() {
     )
 }
 
-
-const arr=[
-    {like:'kadjf;lk',title:""},
-    {like:'kadjf;lk',title:""},
-    {like:'kadjf;lk',title:""},
-    {like:'kadjf;lk',title:""},
-    {like:'kadjf;lk',title:""},
-    {like:'kadjf;lk',title:""},
-    {like:'kadjf;lk',title:""},
-    {like:'kadjf;lk',title:""},
-    {like:'kadjf;lk',title:""},
-    {like:'kadjf;lk',title:""},
-    {like:'kadjf;lk',title:""},
-]

@@ -28,11 +28,11 @@ export default function Home() {
             <Header />
             {/* <CarouselComponent /> */}
             <div className=' w-screen m-auto flex justify-center flex-col'>
-                <img src={Image1} alt="" className=' w-fullt'/>
-                <img src={Image2} alt="" className=' w-fullt'/>
-                <img src={Image3} alt="" className=' w-fullt'/>
-                <img src={Image4} alt="" className=' w-fullt'/>
-                <img src={Image5} alt="" className=' w-fullt'/>
+                <img src={Image1} alt="" className=' w-fullt' />
+                <img src={Image2} alt="" className=' w-fullt' />
+                <img src={Image3} alt="" className=' w-fullt' />
+                <img src={Image4} alt="" className=' w-fullt' />
+                <img src={Image5} alt="" className=' w-fullt' />
             </div>
             <FooterComponent />
             <AI />
